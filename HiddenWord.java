@@ -6,7 +6,7 @@ public class HiddenWord {
         this.word = word;
     }
     
-    public static String getHint(String guess) {
+    public String getHint(String guess) {
         String hint = "";
         String words = word;
         for (int i = 0; i <= guess.length() - 1; i++) {
