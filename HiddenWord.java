@@ -1,8 +1,11 @@
 public class HiddenWord {
-    String word;
+    
+    private String word;
+
     public HiddenWord(String word) {
         this.word = word;
     }
+    
     public String getHint(String guess) {
         String hint = "";
         for (int i = 0; i <= guess.length() - 1; i++) {
@@ -16,4 +19,5 @@ public class HiddenWord {
         }
         return hint;
     }
+    
 }
